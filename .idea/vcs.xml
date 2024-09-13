@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RuoYi-Vue-Plus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RuoYi-Vue3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/second-class" vcs="Git" />
+  </component>
+</project>
