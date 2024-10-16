@@ -1,0 +1,41 @@
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="DBTables" targetRuntime="MyBatis3">
+        <!-- 数据库连接信息 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/secondclass_database"
+                        userId="root"
+                        password="jj123"/>
+
+        <!-- 生成的 Java 模型类包路径 -->
+        <javaModelGenerator targetPackage="com.example.demo.model" targetProject="src/main/java"/>
+
+        <!-- 生成的 Mapper 类包路径 -->
+        <sqlMapGenerator targetPackage="com.example.mapper" targetProject="src/main/resources"/>
+
+        <!-- 生成的 DAO/Mapper 接口包路径 -->
+        <javaClientGenerator targetPackage="com.example.demo.Mapper" type="XMLMAPPER" targetProject="src/main/java"/>
+
+        <!-- 配置数据库表，并为每个表生成对应的实体类和映射文件 -->
+        <table tableName="permission" domainObjectName="Permission" />
+        <table tableName="administrator" domainObjectName="Administrator" />
+        <table tableName="user" domainObjectName="User" />
+        <table tableName="credit" domainObjectName="Credit" />
+        <table tableName="score" domainObjectName="Score" />
+        <table tableName="activity" domainObjectName="Activity" />
+        <table tableName="user_activity" domainObjectName="UserActivity" />
+        <table tableName="score_type" domainObjectName="ScoreType" />
+        <table tableName="activity_type" domainObjectName="ActivityType" />
+        <table tableName="additional" domainObjectName="Additional" />
+        <table tableName="apply" domainObjectName="Apply" />
+        <table tableName="materials" domainObjectName="Materials" />
+        <table tableName="add_materials" domainObjectName="AddMaterials" />
+        <table tableName="feedback" domainObjectName="Feedback" />
+        <table tableName="user_apply" domainObjectName="UserApply" />
+
+    </context>
+</generatorConfiguration>
